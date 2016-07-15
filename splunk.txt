@@ -1,0 +1,18 @@
+if data is on remote host, use forwarder to send data to this instance.
+
+The process of transforming the data is called indexing
+During indexing, the incoming data is processed to enable fast searching and analysis. The processed results are stored in the index as events.
+
+The index is a flat file repository for the data. For this tutorial, the index resides on the computer where you access the Splunk platform.
+
+Events are stored in the index as a group of files that fall into two categories:
+
+ Raw data, which is the data that you add to the Splunk platform. The raw data is stored in a compressed format.
+ Index files, which include some metadata files that point to the raw data.
+These files reside in sets of directories, called buckets, that are organized by age.
+
+By default, all of your data is put into a single, preconfigured index. There are several other indexes used for internal purposes.
+
+Statistics: stats, top, chart
+
+http://docs.splunk.com/Documentation/Splunk/6.4.2/SearchTutorial/Useasubsearch
